@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #333;
+            padding: 15px;
+            color: white;
+            position: relative;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        /* Menu */
+        .menu {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            background: #444;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu a:hover {
+            background: #555;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to my site!</h1>
-    <p>This is my first GitHub Pages website 🚀</p>
+
+<div class="navbar">
+    My Website
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="menu" class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </div>
+</div>
+
+<h1 style="padding:20px;">Welcome!</h1>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
