@@ -80,5 +80,5 @@ body {
 .logo-règ {
     width: 500px;  /* adjust size */
     height: 500px;
-    object-fit: center;
+    object-fit: contain;
 }
