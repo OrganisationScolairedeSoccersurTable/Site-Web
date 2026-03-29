@@ -1,1 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Navbar */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hamburger */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
+/* Menu */
+.menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+/* Show menu */
+.show {
+    display: block;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
