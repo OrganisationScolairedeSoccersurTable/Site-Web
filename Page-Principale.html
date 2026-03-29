@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Principale</title>
 
-    <!-- Link CSS -->
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,19 +16,24 @@
 
 <!-- Navbar -->
 <div class="navbar">
-    <link rel="icon" type="image/png" href="logo.png">
-    <div class="logo">My Website</div>
+    <!-- Logo on top-left -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        My Website
+    </div>
 
+    <!-- Hamburger menu -->
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
         <div></div>
     </div>
 
+    <!-- Menu links -->
     <div id="menu" class="menu">
-        <a href="page-principale.html">Page Principale</a>
-        <a href="Règlements.html">Règlements</a>
-        <a href="projects.html">Projects</a>
+        <a href="Page-Principale.html">Page Principale</a>
+        <a href="Reglements.html">Règlements</a>
+        <a href="Projects.html">Projects</a>
     </div>
 </div>
 
@@ -36,7 +43,7 @@
     <p>This is my homepage 🚀</p>
 </div>
 
-<!-- Link JS -->
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
