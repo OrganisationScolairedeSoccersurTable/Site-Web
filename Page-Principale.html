@@ -1,69 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        /* Navbar */
-        .navbar {
-            background: #333;
-            padding: 15px;
-            color: white;
-            position: relative;
-        }
-
-        /* Hamburger */
-        .hamburger {
-            position: absolute;
-            right: 20px;
-            top: 15px;
-            cursor: pointer;
-        }
-
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background: white;
-            margin: 5px;
-            transition: 0.3s;
-        }
-
-        /* Menu */
-        .menu {
-            display: none;
-            position: absolute;
-            right: 20px;
-            top: 60px;
-            background: #444;
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .menu a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-        }
-
-        .menu a:hover {
-            background: #555;
-        }
-
-        .show {
-            display: block;
-        }
-    </style>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Navbar -->
 <div class="navbar">
-    My Website
+    <div class="logo">My Website</div>
 
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
@@ -72,21 +22,20 @@
     </div>
 
     <div id="menu" class="menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
     </div>
 </div>
 
-<h1 style="padding:20px;">Welcome!</h1>
+<!-- Page content -->
+<div class="content">
+    <h1>Welcome!</h1>
+    <p>This is my homepage 🚀</p>
+</div>
 
-<script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-}
-</script>
+<!-- Link JS -->
 <script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+
 </body>
 </html>
-
