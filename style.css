@@ -82,3 +82,23 @@ body {
     height: 100vw;
     object-fit: contain;
 }
+
+.Rel-Tit {
+    width: 95vw;
+    height: auto;
+}
+
+.Rel-Tit2 {
+    width: 30vw;
+    height: auto;
+}
+
+Rel-Tit3{
+    width: 10vw;
+    height: auto;
+}
+
+Rel-Tit4 {
+    width: 5vw;
+    height:auto;
+}
