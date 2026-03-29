@@ -76,3 +76,9 @@ body {
     height: 40px;
     object-fit: contain;
 }
+
+.logo-règ {
+    width: 480px;  /* adjust size */
+    height: 480px;
+    object-fit: center;
+}
