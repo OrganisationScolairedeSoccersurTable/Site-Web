@@ -78,7 +78,7 @@ body {
 }
 
 .logo-reg {
-    width: 10vw;  /* adjust size */
-    height: 10vw;
+    width: 100vw;  /* adjust size */
+    height: 100vw;
     object-fit: contain;
 }
